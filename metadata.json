@@ -1,5 +1,5 @@
 {
-  "name": "SCADA Industrial Monitoring",
+  "name": "emmasa",
   "description": "A modern, clean, and corporate web application for monitoring and managing SCADA industrial data. It provides an intuitive interface for visualizing critical data, managing alarms, and configuring dashboards.",
   "requestFramePermissions": []
 }
