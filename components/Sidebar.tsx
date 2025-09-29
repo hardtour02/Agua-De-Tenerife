@@ -35,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, setCurrentPage }) => {
     <aside className="w-64 bg-sidebar p-4 flex-shrink-0 flex flex-col shadow-2xl">
       <div className="flex items-center justify-center h-16 mb-6">
         <img 
-            src="https://www.canaldeisabelsegunda.es/image/layout_set_logo?img_id=40884&t=1758692155513" 
+            src="https://i.imgur.com/gQfob3c.png" 
             alt="Logo de la empresa" 
             className="h-10"
             style={{ filter: 'brightness(0) invert(1)' }}

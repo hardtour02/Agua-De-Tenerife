@@ -73,6 +73,12 @@ const SettingsPage: React.FC = () => {
         handleCloseModal();
     };
     
+    const handleDeleteWidget = (widgetId: number) => {
+        if (window.confirm('¿Estás seguro de que quieres eliminar este widget?')) {
+            setWidgets(widgets.filter(w => w.id !== widgetId));
+        }
+    };
+
     const getChartTypeDescription = (type: WidgetType) => {
         switch (type) {
             case 'Line': return 'Gráfico de líneas';
@@ -106,7 +112,7 @@ const SettingsPage: React.FC = () => {
                             </div>
                              <div className="flex items-center space-x-2">
                                 <button onClick={() => handleOpenEditModal(widget)} className="text-water-blue text-sm font-semibold hover:underline">Editar</button>
-                                <button className="text-alarm-red text-sm font-semibold hover:underline">Eliminar</button>
+                                <button onClick={() => handleDeleteWidget(widget.id)} className="text-alarm-red text-sm font-semibold hover:underline">Eliminar</button>
                             </div>
                         </div>
                     )) : (

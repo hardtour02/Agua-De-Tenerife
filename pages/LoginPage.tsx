@@ -10,13 +10,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
     <div className="min-h-screen flex items-center justify-center bg-background-main p-4">
       <div className="w-full max-w-md text-center">
         <div className="flex items-center justify-center mb-8">
-            <svg viewBox="0 0 200 200" className="w-24 h-24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#003366" d="M100 0A100 100 0 0 0 0 100a100 100 0 0 0 100 100 100 100 0 0 0 100-100A100 100 0 0 0 100 0zm0 180a80 80 0 1 1 80-80 80 80 0 0 1-80 80z"/>
-                <path fill="#4EC8E8" d="M150 100a50 50 0 0 1-50 50c-22.3 0-41-14.5-47.6-34.5a50 50 0 0 1 47.6-65.5 50 50 0 0 1 50 50z"/>
-            </svg>
+            <img 
+                src="https://i.imgur.com/gQfob3c.png" 
+                alt="Logo de la empresa" 
+                className="w-48"
+                style={{ filter: 'brightness(0) invert(1)' }}
+            />
         </div>
-        <h1 className="text-3xl font-bold text-white mb-2">Aguas de Tenerife</h1>
-        <p className="text-text-secondary mb-10">Monitorización Industrial SCADA</p>
+        <p className="text-2xl font-semibold text-text-secondary mb-10">Monitorización Industrial SCADA</p>
         
         <button 
           onClick={onLogin} 
